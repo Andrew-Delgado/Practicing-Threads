@@ -20,6 +20,7 @@ public class Volatile {
 
 class Counter extends Thread{
 
+    // Use volatile for flags(booleans) and AtomicInteger / AtomicLong for counters
     private volatile boolean counting = true;
     private int counter = 1;
 
